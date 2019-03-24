@@ -19,7 +19,7 @@ class ThreadClient extends Client {
         super(options);
 
         /**
-         * The client's prefix, can be a string or an array of prefixes
+         * The client's prefix, can be a string or an array of strings
          * @type {?string|string[]}
          */
         this.prefix = options.prefix;
