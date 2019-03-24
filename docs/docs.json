@@ -2,7 +2,7 @@
     "meta": {
         "generator": "0.8.0",
         "format": 19,
-        "date": 1553458232245
+        "date": 1553458429659
     },
     "custom": null,
     "classes": [
@@ -81,6 +81,16 @@
                     "deprecated": true,
                     "meta": {
                         "line": 38,
+                        "file": "Client.js",
+                        "path": "src/client"
+                    }
+                },
+                {
+                    "name": "start",
+                    "description": "Initializes and logs the Client in",
+                    "async": true,
+                    "meta": {
+                        "line": 45,
                         "file": "Client.js",
                         "path": "src/client"
                     }

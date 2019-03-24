@@ -25,6 +25,7 @@ The base client for Ghastly
     * [new ThreadClient(options)](#new_ThreadClient_new)
     * [.prefix](#ThreadClient+prefix) : <code>string</code> \| <code>Array.&lt;string&gt;</code>
     * ~~[.login()](#ThreadClient+login)~~
+    * [.start()](#ThreadClient+start)
 
 <a name="new_ThreadClient_new"></a>
 
@@ -48,6 +49,12 @@ The client's prefix, can be a string or an array of prefixes
 ***Deprecated***
 
 Throws an error, use the [start](GhastlyClient#start) method instead
+
+**Kind**: instance method of [<code>ThreadClient</code>](#ThreadClient)  
+<a name="ThreadClient+start"></a>
+
+### threadClient.start()
+Initializes and logs the Client in
 
 **Kind**: instance method of [<code>ThreadClient</code>](#ThreadClient)  
 <a name="ThreadClientOptions"></a>
