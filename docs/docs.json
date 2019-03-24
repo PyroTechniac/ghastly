@@ -2,7 +2,7 @@
     "meta": {
         "generator": "0.8.0",
         "format": 19,
-        "date": 1553452672841
+        "date": 1553454710576
     },
     "custom": null,
     "classes": [
@@ -12,15 +12,136 @@
             "extends": [
                 "external:Client"
             ],
+            "props": [
+                {
+                    "name": "prefix",
+                    "description": "The client's prefix, can be a string or an array of prefixes",
+                    "type": [
+                        [
+                            [
+                                "string"
+                            ]
+                        ],
+                        [
+                            [
+                                "Array",
+                                "<"
+                            ],
+                            [
+                                "string",
+                                ">"
+                            ]
+                        ]
+                    ],
+                    "meta": {
+                        "line": 20,
+                        "file": "Client.js",
+                        "path": "src/client"
+                    }
+                },
+                {
+                    "name": "_token",
+                    "description": "The client's token",
+                    "access": "private",
+                    "type": [
+                        [
+                            [
+                                "string"
+                            ]
+                        ]
+                    ],
+                    "meta": {
+                        "line": 27,
+                        "file": "Client.js",
+                        "path": "src/client"
+                    }
+                }
+            ],
+            "methods": [
+                {
+                    "name": "login",
+                    "description": "Throws an error, use the {@link GhastlyClient#start start} method instead",
+                    "deprecated": true,
+                    "meta": {
+                        "line": 34,
+                        "file": "Client.js",
+                        "path": "src/client"
+                    }
+                }
+            ],
             "meta": {
-                "line": 9,
+                "line": 11,
                 "file": "Client.js",
                 "path": "src/client"
+            }
+        },
+        {
+            "name": "GhastlyError",
+            "description": "Internal Error class for throwing universal error methods",
+            "extends": [
+                "Error"
+            ],
+            "access": "private",
+            "meta": {
+                "line": 10,
+                "file": "GhastlyError.js",
+                "path": "src/util"
             }
         }
     ],
     "interfaces": [],
-    "typedefs": [],
+    "typedefs": [
+        {
+            "name": "GhastlyClientOptions",
+            "type": [
+                [
+                    [
+                        "Object"
+                    ]
+                ]
+            ],
+            "props": [
+                {
+                    "name": "prefix",
+                    "description": "The prefix for the client",
+                    "optional": true,
+                    "type": [
+                        [
+                            [
+                                "string"
+                            ]
+                        ],
+                        [
+                            [
+                                "Array",
+                                "<"
+                            ],
+                            [
+                                "string",
+                                ">"
+                            ]
+                        ]
+                    ]
+                },
+                {
+                    "name": "token",
+                    "description": "The client's token",
+                    "type": [
+                        [
+                            [
+                                "string"
+                            ]
+                        ]
+                    ]
+                }
+            ],
+            "meta": {
+                "line": 3,
+                "file": "Constants.js",
+                "path": "src/util"
+            }
+        }
+    ],
     "externals": [
         {
             "name": "Client",
