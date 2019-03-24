@@ -1,3 +1,22 @@
 {
-    "name": "ghastly"
+    "name": "ghastly",
+    "version": "0.0.1",
+    "author": "Gryffon Bellish <owenbellish@gmail.com>",
+    "main": "./lib/index.js",
+    "scripts": {},
+    "license": "MIT",
+    "description": "A discord.js modular handler",
+    "dependencies": {
+        "advancedts": "^1.10.1",
+        "discord.js": "discordjs/discord.js"
+    },
+    "devDependencies": {
+        "discord.js-docgen": "discordjs/discord.js-docgen",
+        "eslint": "^5.15.3",
+        "eslint-config-pyro": "pyrotechniac/pyro-lint",
+        "jsdoc-to-markdown": "^4.0.1",
+        "nodemon": "^1.18.10"
+    },
+    "optionalDependencies": {},
+    "peerDependencies": {}
 }
