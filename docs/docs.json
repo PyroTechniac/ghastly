@@ -2,12 +2,12 @@
     "meta": {
         "generator": "0.8.0",
         "format": 19,
-        "date": 1553454710576
+        "date": 1553458043348
     },
     "custom": null,
     "classes": [
         {
-            "name": "GhastlyClient",
+            "name": "ThreadClient",
             "description": "The base client for Ghastly",
             "extends": [
                 "external:Client"
@@ -84,7 +84,7 @@
             "access": "private",
             "meta": {
                 "line": 10,
-                "file": "GhastlyError.js",
+                "file": "ThreadError.js",
                 "path": "src/util"
             }
         }
@@ -92,7 +92,7 @@
     "interfaces": [],
     "typedefs": [
         {
-            "name": "GhastlyClientOptions",
+            "name": "SpookyClientOptions",
             "type": [
                 [
                     [
