@@ -38,6 +38,13 @@ class ThreadClient extends Client {
     login(token) {
         throw new ThreadError('DEPRECATED_METHOD', 'login', 'start');
     }
+
+    /**
+     * Initializes and logs the Client in
+     */
+    async start() {
+        return super.login(this._token);
+    }
 }
 
 module.exports = ThreadClient;
