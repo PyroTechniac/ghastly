@@ -15,7 +15,6 @@
     "license": "MIT",
     "description": "A discord.js modular handler",
     "dependencies": {
-        "advancedts": "^1.10.1",
         "discord.js": "discordjs/discord.js"
     },
     "devDependencies": {

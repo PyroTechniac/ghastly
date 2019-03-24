@@ -50,14 +50,6 @@ acorn@^6.0.7:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.1.1.tgz#7d25ae05bb8ad1f9b699108e1094ecd7884adc1f"
   integrity sha512-jPTiwtOxaHNaAPg/dmrJ/beuzLRnXtB0kQPQ8JpotKJgTB6rX6c8mlf315941pyjBSaPg8NHXS9fhP4u17DpGA==
 
-advancedts@^1.10.1:
-  version "1.10.1"
-  resolved "https://registry.yarnpkg.com/advancedts/-/advancedts-1.10.1.tgz#b5c3ca2e6b7402fdcb187f478915af5d2ae197ea"
-  integrity sha512-udkmjcHBEWVDlLmnUiuVtaiFmhmX9PFayfFJZAE33SFry+K+tSrHWcOmxesoqDPkWm6C+LY1gblAEDA+hk0e+A==
-  dependencies:
-    fs-nextra "^0.4.5"
-    long dcodeIO/long.js
-
 ajv-keywords@^2.1.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/ajv-keywords/-/ajv-keywords-2.1.1.tgz#617997fc5f60576894c435f940d819e135b80762"
@@ -735,7 +727,7 @@ discord.js@discordjs/discord.js:
     form-data "^2.3.3"
     node-fetch "^2.3.0"
     pako "^1.0.8"
-    prism-media "^1.0.0"
+    prism-media amishshah/prism-media
     setimmediate "^1.0.5"
     tweetnacl "^1.0.1"
     ws "^6.1.3"
@@ -1154,11 +1146,6 @@ fs-minipass@^1.2.5:
   integrity sha512-JhBl0skXjUPCFH7x6x61gQxrKyXsxB5gcgePLZCwfyCGGsTISMoIeObbrvVeP6Xmyaudw4TT43qV2Gz+iyd2oQ==
   dependencies:
     minipass "^2.2.1"
-
-fs-nextra@^0.4.5:
-  version "0.4.5"
-  resolved "https://registry.yarnpkg.com/fs-nextra/-/fs-nextra-0.4.5.tgz#0f44a00dd6c0547adaf59ce875e59941d0c70664"
-  integrity sha512-oY2o6j0izYzJWp2sow21SekkR3qeMZqHV5ZfNFvfKimFU7piw1/AWwiwbcWjuSfwrfCmHyHymWZOyNbKOzew5g==
 
 fs-then-native@^2.0.0:
   version "2.0.0"
@@ -1816,10 +1803,6 @@ lodash@^4.17.11, lodash@^4.17.4, lodash@^4.3.0:
   version "4.17.11"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
-
-long@dcodeIO/long.js:
-  version "4.0.1"
-  resolved "https://codeload.github.com/dcodeIO/long.js/tar.gz/8181a6b50a2a230f0b2a1e4c4093f9b9d19c8b69"
 
 lowercase-keys@^1.0.0:
   version "1.0.1"
