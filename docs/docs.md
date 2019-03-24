@@ -43,7 +43,7 @@ Initializes a new client
 <a name="ThreadClient+prefix"></a>
 
 ### threadClient.prefix : <code>string</code> \| <code>Array.&lt;string&gt;</code>
-The client's prefix, can be a string or an array of prefixes
+The client's prefix, can be a string or an array of strings
 
 **Kind**: instance property of [<code>ThreadClient</code>](#ThreadClient)  
 <a name="ThreadClient+login"></a>

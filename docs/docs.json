@@ -2,7 +2,7 @@
     "meta": {
         "generator": "0.8.0",
         "format": 19,
-        "date": 1553460409982
+        "date": 1553462323462
     },
     "custom": null,
     "classes": [
@@ -32,7 +32,7 @@
             "props": [
                 {
                     "name": "prefix",
-                    "description": "The client's prefix, can be a string or an array of prefixes",
+                    "description": "The client's prefix, can be a string or an array of strings",
                     "type": [
                         [
                             [
