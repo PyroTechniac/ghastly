@@ -2,7 +2,7 @@
     "meta": {
         "generator": "0.8.0",
         "format": 19,
-        "date": 1553458043348
+        "date": 1553458232245
     },
     "custom": null,
     "classes": [
@@ -12,6 +12,23 @@
             "extends": [
                 "external:Client"
             ],
+            "construct": {
+                "name": "ThreadClient",
+                "description": "Initializes a new client",
+                "params": [
+                    {
+                        "name": "options",
+                        "description": "Options to use",
+                        "type": [
+                            [
+                                [
+                                    "ThreadClientOptions"
+                                ]
+                            ]
+                        ]
+                    }
+                ]
+            },
             "props": [
                 {
                     "name": "prefix",
@@ -34,7 +51,7 @@
                         ]
                     ],
                     "meta": {
-                        "line": 20,
+                        "line": 24,
                         "file": "Client.js",
                         "path": "src/client"
                     }
@@ -51,7 +68,7 @@
                         ]
                     ],
                     "meta": {
-                        "line": 27,
+                        "line": 31,
                         "file": "Client.js",
                         "path": "src/client"
                     }
@@ -63,7 +80,7 @@
                     "description": "Throws an error, use the {@link GhastlyClient#start start} method instead",
                     "deprecated": true,
                     "meta": {
-                        "line": 34,
+                        "line": 38,
                         "file": "Client.js",
                         "path": "src/client"
                     }
@@ -76,7 +93,7 @@
             }
         },
         {
-            "name": "GhastlyError",
+            "name": "ThreadError",
             "description": "Internal Error class for throwing universal error methods",
             "extends": [
                 "Error"
@@ -92,7 +109,7 @@
     "interfaces": [],
     "typedefs": [
         {
-            "name": "SpookyClientOptions",
+            "name": "ThreadClientOptions",
             "type": [
                 [
                     [
