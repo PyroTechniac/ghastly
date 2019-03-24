@@ -1,0 +1,37 @@
+{
+    "meta": {
+        "generator": "0.8.0",
+        "format": 19,
+        "date": 1553452351817
+    },
+    "custom": null,
+    "classes": [
+        {
+            "name": "GhastlyClient",
+            "description": "The base client for Ghastly",
+            "extends": [
+                "external:Client"
+            ],
+            "meta": {
+                "line": 9,
+                "file": "Client.js",
+                "path": "src/client"
+            }
+        }
+    ],
+    "interfaces": [],
+    "typedefs": [],
+    "externals": [
+        {
+            "name": "Client",
+            "see": [
+                "{@link https://discord.js.org/#/docs/main/master/class/Client}"
+            ],
+            "meta": {
+                "line": 7,
+                "file": "index.js",
+                "path": "src"
+            }
+        }
+    ]
+}
