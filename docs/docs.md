@@ -51,7 +51,7 @@ The client's prefix, can be a string or an array of prefixes
 ### ~~threadClient.login()~~
 ***Deprecated***
 
-Throws an error, use the [start](GhastlyClient#start) method instead
+Throws an error, use the [start](#ThreadClient+start) method instead
 
 **Kind**: instance method of [<code>ThreadClient</code>](#ThreadClient)  
 <a name="ThreadClient+start"></a>

@@ -2,7 +2,7 @@
     "meta": {
         "generator": "0.8.0",
         "format": 19,
-        "date": 1553460242571
+        "date": 1553460409982
     },
     "custom": null,
     "classes": [
@@ -77,7 +77,7 @@
             "methods": [
                 {
                     "name": "login",
-                    "description": "Throws an error, use the {@link GhastlyClient#start start} method instead",
+                    "description": "Throws an error, use the {@link ThreadClient#start start} method instead",
                     "deprecated": true,
                     "meta": {
                         "line": 39,
