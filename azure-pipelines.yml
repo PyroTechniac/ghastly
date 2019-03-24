@@ -1,7 +1,7 @@
 variables:
   type: 'Docs'
   versionSpec: '10.x'
-  ghRef: 'github.com/PyroTechniac/threaded'
+  ghRef: 'github.com/PyroTechniac/thread'
   targetBranch: 'master'
 
 
