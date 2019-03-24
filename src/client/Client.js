@@ -2,13 +2,13 @@
 
 const { Client, Util: { mergeDefault } } = require('discord.js');
 const { ClientOptions } = require('../util/Constants');
-const GhastlyError = require('../util/GhastlyError');
+const SpookyError = require('../util/SpookyError');
 
 /**
  * The base client for Ghastly
  * @extends external:Client
  */
-class GhastlyClient extends Client {
+class SpookyClient extends Client {
     constructor(options) {
         options = mergeDefault(ClientOptions, options);
         super(options);
@@ -32,8 +32,8 @@ class GhastlyClient extends Client {
      * @deprecated
      */
     login(token) {
-        throw new GhastlyError('DEPRECATED_METHOD', 'login', 'start');
+        throw new SpookyError('DEPRECATED_METHOD', 'login', 'start');
     }
 }
 
-module.exports = GhastlyClient;
+module.exports = SpookyClient;
