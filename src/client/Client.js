@@ -3,6 +3,7 @@
 const { Client, Util: { mergeDefault } } = require('discord.js');
 const { ClientOptions } = require('../util/Constants');
 const ThreadError = require('../util/ThreadError');
+const Util = require('../util/Util');
 
 /**
  * The base client for Ghastly
@@ -43,7 +44,16 @@ class ThreadClient extends Client {
      * Initializes and logs the Client in
      */
     async start() {
+        await this.init();
         return super.login(this._token);
+    }
+
+    /**
+     * Private initialization method
+     * @private
+     */
+    async init() {
+        if (!Util.testToken(this._token)) throw new ThreadError('PROVIDE_INVALID', 'token');
     }
 }
 

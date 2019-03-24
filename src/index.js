@@ -1,7 +1,9 @@
 'use strict';
 
 module.exports = {
-    ThreadClient: require('./client/Client')
+    ThreadClient: require('./client/Client'),
+    Util: require('./util/Util'),
+    ThreadError: require('./util/ThreadError')
 };
 
 /**
