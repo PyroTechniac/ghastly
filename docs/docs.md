@@ -4,6 +4,9 @@
 <dt><a href="#ThreadClient">ThreadClient</a> ⇐ <code><a href="https://discord.js.org/#/docs/main/master/class/Client">Client</a></code></dt>
 <dd><p>The base client for Ghastly</p>
 </dd>
+<dt><a href="#Util">Util</a></dt>
+<dd><p>Static Utility methods used within Thread</p>
+</dd>
 </dl>
 
 ## Typedefs
@@ -57,6 +60,23 @@ Throws an error, use the [start](GhastlyClient#start) method instead
 Initializes and logs the Client in
 
 **Kind**: instance method of [<code>ThreadClient</code>](#ThreadClient)  
+<a name="Util"></a>
+
+## Util
+Static Utility methods used within Thread
+
+**Kind**: global class  
+<a name="Util.testToken"></a>
+
+### Util.testToken(token) ⇒ <code>boolean</code>
+Tests if a Clients token is correct
+
+**Kind**: static method of [<code>Util</code>](#Util)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| token | <code>string</code> | The token |
+
 <a name="ThreadClientOptions"></a>
 
 ## ThreadClientOptions : <code>Object</code>

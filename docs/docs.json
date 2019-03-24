@@ -2,7 +2,7 @@
     "meta": {
         "generator": "0.8.0",
         "format": 19,
-        "date": 1553458429659
+        "date": 1553460242571
     },
     "custom": null,
     "classes": [
@@ -51,7 +51,7 @@
                         ]
                     ],
                     "meta": {
-                        "line": 24,
+                        "line": 25,
                         "file": "Client.js",
                         "path": "src/client"
                     }
@@ -68,7 +68,7 @@
                         ]
                     ],
                     "meta": {
-                        "line": 31,
+                        "line": 32,
                         "file": "Client.js",
                         "path": "src/client"
                     }
@@ -80,7 +80,7 @@
                     "description": "Throws an error, use the {@link GhastlyClient#start start} method instead",
                     "deprecated": true,
                     "meta": {
-                        "line": 38,
+                        "line": 39,
                         "file": "Client.js",
                         "path": "src/client"
                     }
@@ -90,14 +90,25 @@
                     "description": "Initializes and logs the Client in",
                     "async": true,
                     "meta": {
-                        "line": 45,
+                        "line": 46,
+                        "file": "Client.js",
+                        "path": "src/client"
+                    }
+                },
+                {
+                    "name": "init",
+                    "description": "Private initialization method",
+                    "access": "private",
+                    "async": true,
+                    "meta": {
+                        "line": 55,
                         "file": "Client.js",
                         "path": "src/client"
                     }
                 }
             ],
             "meta": {
-                "line": 11,
+                "line": 12,
                 "file": "Client.js",
                 "path": "src/client"
             }
@@ -112,6 +123,47 @@
             "meta": {
                 "line": 10,
                 "file": "ThreadError.js",
+                "path": "src/util"
+            }
+        },
+        {
+            "name": "Util",
+            "description": "Static Utility methods used within Thread",
+            "methods": [
+                {
+                    "name": "testToken",
+                    "description": "Tests if a Clients token is correct",
+                    "scope": "static",
+                    "params": [
+                        {
+                            "name": "token",
+                            "description": "The token",
+                            "type": [
+                                [
+                                    [
+                                        "string"
+                                    ]
+                                ]
+                            ]
+                        }
+                    ],
+                    "returns": [
+                        [
+                            [
+                                "boolean"
+                            ]
+                        ]
+                    ],
+                    "meta": {
+                        "line": 18,
+                        "file": "Util.js",
+                        "path": "src/util"
+                    }
+                }
+            ],
+            "meta": {
+                "line": 8,
+                "file": "Util.js",
                 "path": "src/util"
             }
         }
@@ -176,7 +228,7 @@
                 "{@link https://discord.js.org/#/docs/main/master/class/Client}"
             ],
             "meta": {
-                "line": 7,
+                "line": 9,
                 "file": "index.js",
                 "path": "src"
             }
