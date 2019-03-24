@@ -33,7 +33,7 @@ class ThreadClient extends Client {
     }
 
     /**
-     * Throws an error, use the {@link GhastlyClient#start start} method instead
+     * Throws an error, use the {@link ThreadClient#start start} method instead
      * @deprecated
      */
     login(token) {
