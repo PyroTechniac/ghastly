@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * @typedef {Object} SpookyClientOptions
+ * @typedef {Object} ThreadClientOptions
  * @property {string|string[]} [prefix] The prefix for the client
  * @property {string} token The client's token
  */

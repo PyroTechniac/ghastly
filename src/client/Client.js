@@ -9,6 +9,10 @@ const ThreadError = require('../util/ThreadError');
  * @extends external:Client
  */
 class ThreadClient extends Client {
+    /**
+     * Initializes a new client
+     * @param {ThreadClientOptions} options Options to use
+     */
     constructor(options) {
         options = mergeDefault(ClientOptions, options);
         super(options);

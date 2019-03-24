@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-    GhastlyClient: require('./client/Client')
+    ThreadClient: require('./client/Client')
 };
 
 /**

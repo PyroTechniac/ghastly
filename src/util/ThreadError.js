@@ -7,7 +7,7 @@ const { Messages } = require('./Constants');
  * @extends Error
  * @private
  */
-class GhastlyError extends Error {
+class ThreadError extends Error {
     constructor(key, ...args) {
         // eslint-disable-next-line eqeqeq
         if (Messages[key] == null) throw new TypeError(`The key ${key} does not exist`);
@@ -20,8 +20,8 @@ class GhastlyError extends Error {
     }
 
     get name() {
-        return `GhastlyError [${this.code}]`;
+        return `ThreadError [${this.code}]`;
     }
 }
 
-module.exports = GhastlyError;
+module.exports = ThreadError;
