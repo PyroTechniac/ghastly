@@ -9,7 +9,7 @@
 ## Typedefs
 
 <dl>
-<dt><a href="#SpookyClientOptions">SpookyClientOptions</a> : <code>Object</code></dt>
+<dt><a href="#ThreadClientOptions">ThreadClientOptions</a> : <code>Object</code></dt>
 <dd></dd>
 </dl>
 
@@ -22,8 +22,19 @@ The base client for Ghastly
 **Extends**: [<code>Client</code>](https://discord.js.org/#/docs/main/master/class/Client)  
 
 * [ThreadClient](#ThreadClient) ⇐ [<code>Client</code>](https://discord.js.org/#/docs/main/master/class/Client)
+    * [new ThreadClient(options)](#new_ThreadClient_new)
     * [.prefix](#ThreadClient+prefix) : <code>string</code> \| <code>Array.&lt;string&gt;</code>
     * ~~[.login()](#ThreadClient+login)~~
+
+<a name="new_ThreadClient_new"></a>
+
+### new ThreadClient(options)
+Initializes a new client
+
+
+| Param | Type | Description |
+| --- | --- | --- |
+| options | [<code>ThreadClientOptions</code>](#ThreadClientOptions) | Options to use |
 
 <a name="ThreadClient+prefix"></a>
 
@@ -39,9 +50,9 @@ The client's prefix, can be a string or an array of prefixes
 Throws an error, use the [start](GhastlyClient#start) method instead
 
 **Kind**: instance method of [<code>ThreadClient</code>](#ThreadClient)  
-<a name="SpookyClientOptions"></a>
+<a name="ThreadClientOptions"></a>
 
-## SpookyClientOptions : <code>Object</code>
+## ThreadClientOptions : <code>Object</code>
 **Kind**: global typedef  
 **Properties**
 
