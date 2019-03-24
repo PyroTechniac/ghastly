@@ -1,0 +1,6 @@
+{
+    "extends": "pyro",
+    "rules": {
+        "strict": "error"
+    }
+}

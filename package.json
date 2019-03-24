@@ -3,7 +3,15 @@
     "version": "0.0.1",
     "author": "Gryffon Bellish <owenbellish@gmail.com>",
     "main": "./lib/index.js",
-    "scripts": {},
+    "scripts": {
+        "test": "nodemon ./test/main.js",
+        "docs:build": "yarn docs:md && yarn docs:json",
+        "docs:test": "yarn docs:md:test && yarn docs:json:test",
+        "docs:json:test": "docgen --source src --spaces 4 --output ./.docs/docs.json",
+        "docs:md:test": "node ./testBuild.js",
+        "docs:json": "docgen --source src --output ./docs/docs.json --spaces 4",
+        "docs:md": "node ./build.js"
+    },
     "license": "MIT",
     "description": "A discord.js modular handler",
     "dependencies": {
