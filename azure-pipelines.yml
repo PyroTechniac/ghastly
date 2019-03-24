@@ -1,19 +1,44 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
+variables:
+  type: 'Docs'
+  versionSpec: '10.x'
+  ghRef: 'github.com/PyroTechniac/ghastly'
+  targetBranch: 'master'
+
 
 trigger:
-- master
+  branches:
+    include:
+    - master
+  paths:
+    exclude:
+    - docs/*
 
 pool:
   vmImage: 'Ubuntu-16.04'
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+  - task: NodeTool@0
+    inputs:
+      versionSpec: $(versionSpec)
+    displayName: 'Install Node'
+  - script: yarn
+    displayName: 'Install Dependencies'
+  - bash: |
+      git clone $(git config remote.origin.url) out -b $TARGET_BRANCH
+      yarn docs:build
+      mv docs/docs.json out/docs/docs.json
+      mv docs/docs.md out/docs/docs.md
+      cd out
+      git add --all .
+      git config user.name "Azure Pipelines"
+      git config user.email "${COMMIT_EMAIL}"
+      git commit -m "$TYPE build: $(git rev-parse --verify HEAD)"
+      git push "https://${GH_TOKEN}@${GH_REF}" $TARGET_BRANCH
+    env:
+      GH_TOKEN: $(ghToken)
+      COMMIT_EMAIL: $(commitEmail)
+      TYPE: $(type)
+      GH_REF: $(ghRef)
+      BRANCH: $(Build.SourceBranchName)
+      TARGET_BRANCH: $(targetBranch)
+    displayName: Build $(type)
